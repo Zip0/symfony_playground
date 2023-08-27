@@ -15,6 +15,12 @@
         {% block body %}
         <p>ROOTY TOOTY POINT AND SHOOTY</p>
         {{user}}
+        {% for user in users %}
+            {{ dump(user) }}
+        {% endfor %}
+        {% for user in users %}
+            {{ user.email }}
+        {% endfor %}
         {% endblock %}
     </body>
 </html>
